@@ -2,3 +2,7 @@
 *.iml
 build/
 *.pid
+.gradletasknamecache
+.gradle/
+build/
+bin/
