@@ -1,4 +1,5 @@
 rootProject.name = 'ms-calculator'
 
 include ':eureka-server'
-include ':ms-sum'
+include ':zuul-server'
+include ':plus-service'

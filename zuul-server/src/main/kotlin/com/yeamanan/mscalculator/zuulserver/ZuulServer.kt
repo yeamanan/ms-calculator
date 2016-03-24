@@ -1,20 +1,20 @@
-package com.yeamanan.mscalculator.mssum
+package com.yeamanan.mscalculator.zuulserver
 
 import org.slf4j.LoggerFactory
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy
 import org.springframework.context.annotation.Bean
 
 @SpringBootApplication
-@EnableEurekaClient
-open class MsSum {
+@EnableZuulProxy
+open class ZuulServer {
 
-    private val log = LoggerFactory.getLogger(MsSum::class.java)
+    private val log = LoggerFactory.getLogger(ZuulServer::class.java)
 
     @Bean
     open fun init() = CommandLineRunner {
-        log.info("Microservice Sum Started")
+        log.info("Zuul Server Started")
     }
 
 }
