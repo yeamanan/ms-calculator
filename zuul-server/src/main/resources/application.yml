@@ -11,8 +11,10 @@ endpoints:
 
 zuul:
   routes:
-    plus-service: /plus/**
-    minus-service: /minus/**
+    addition-service: /addition/**
+    subtraction-service: /subtraction/**
+    multiplication-service: /multiplication/**
+    division-service: /division/**
 
 server:
   port: 8765
