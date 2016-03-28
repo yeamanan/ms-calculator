@@ -1,0 +1,15 @@
+info:
+  component: Turbine Server
+
+server:
+  port: 8762
+
+spring:
+  application:
+    name: turbine-server
+
+turbine:
+  aggregator:
+    clusterConfig: calculator
+  appConfig: addition-service,calculator-service,division-service,multiplication-service,subtraction-service
+  instanceUrlSuffix: /hystrix.stream

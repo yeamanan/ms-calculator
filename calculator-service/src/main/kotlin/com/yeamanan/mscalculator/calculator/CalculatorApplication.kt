@@ -1,4 +1,4 @@
-package com.yeamanan.mscalculator.subtraction
+package com.yeamanan.mscalculator.calculator
 
 import org.slf4j.LoggerFactory
 import org.springframework.boot.CommandLineRunner
@@ -10,13 +10,13 @@ import org.springframework.context.annotation.Bean
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableCircuitBreaker
-open class SubtractionApplication {
+open class CalculatorApplication {
 
-    private val log = LoggerFactory.getLogger(SubtractionApplication::class.java)
+    private val log = LoggerFactory.getLogger(CalculatorApplication::class.java)
 
     @Bean
     open fun init() = CommandLineRunner {
-        log.info("Subtraction Service Started")
+        log.info("Calculator Service Started")
     }
 
 }

@@ -15,9 +15,14 @@ zuul:
     subtraction-service: /subtraction/**
     multiplication-service: /multiplication/**
     division-service: /division/**
+    calculator-service: /calculator/**
 
 server:
   port: 8765
+
+spring:
+  application:
+    name: zuul-server
 
 logging:
   level:

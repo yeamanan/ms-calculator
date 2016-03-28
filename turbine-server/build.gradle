@@ -3,7 +3,7 @@ apply plugin: 'spring-boot'
 apply plugin: 'io.spring.dependency-management'
 
 jar {
-    baseName = 'addition-service'
+    baseName = 'turbine-server'
     version = msVersion
 }
 
@@ -34,8 +34,8 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-actuator'
 
     compile 'org.springframework.cloud:spring-cloud-starter-eureka'
-
-    compile 'org.springframework.cloud:spring-cloud-starter-hystrix'
+    compile 'org.springframework.cloud:spring-cloud-starter-turbine'
+    compile 'org.springframework.cloud:spring-cloud-starter-hystrix-dashboard'
 }
 
 bootRun {
