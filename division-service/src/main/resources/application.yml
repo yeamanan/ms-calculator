@@ -1,12 +1,12 @@
 info:
-  component: Minus Service
+  component: Division Service
 
 server:
   port: 9001
 
 spring:
   application:
-    name: minus-service
+    name: division-service
 
 eureka:
   client:

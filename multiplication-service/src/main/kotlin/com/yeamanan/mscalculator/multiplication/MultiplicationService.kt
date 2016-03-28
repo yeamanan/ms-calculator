@@ -1,4 +1,4 @@
-package com.yeamanan.mscalculator.minusservice
+package com.yeamanan.mscalculator.multiplication
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand
 import org.slf4j.LoggerFactory
@@ -17,9 +17,9 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 @EnableCircuitBreaker
 @EnableHystrixDashboard
 @RestController
-open class MinusService {
+open class MultiplicationService {
 
-    private val log = LoggerFactory.getLogger(MinusService::class.java)
+    private val log = LoggerFactory.getLogger(MultiplicationService::class.java)
 
     @Bean
     open fun init() = CommandLineRunner {
@@ -28,8 +28,8 @@ open class MinusService {
 
     @RequestMapping("/{x:-?\\d+},{y:-?\\d+}")
     @HystrixCommand(groupKey = "calculator", fallbackMethod = "defaultResult")
-    fun minus(@PathVariable("x") x: Int, @PathVariable("y") y: Int): Int {
-        return x - y
+    fun multiplication(@PathVariable("x") x: Int, @PathVariable("y") y: Int): Int {
+        return x * y
     }
 
     fun defaultResult(x: Int, y: Int): Int {
