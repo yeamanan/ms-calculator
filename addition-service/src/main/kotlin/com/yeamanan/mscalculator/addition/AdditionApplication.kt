@@ -1,4 +1,4 @@
-package com.yeamanan.mscalculator.division
+package com.yeamanan.mscalculator.addition
 
 import org.slf4j.LoggerFactory
 import org.springframework.boot.CommandLineRunner
@@ -12,13 +12,13 @@ import org.springframework.context.annotation.Bean
 @EnableDiscoveryClient
 @EnableCircuitBreaker
 @EnableHystrixDashboard
-open class DivisionApplication {
+open class AdditionApplication {
 
-    private val log = LoggerFactory.getLogger(DivisionApplication::class.java)
+    private val log = LoggerFactory.getLogger(AdditionApplication::class.java)
 
     @Bean
     open fun init() = CommandLineRunner {
-        log.info("Division Service Started")
+        log.info("Addition Service Started")
     }
 
 }

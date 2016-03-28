@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication
 import org.springframework.boot.actuate.system.ApplicationPidFileWriter
 
 fun main(args: Array<String>) {
-    val msAddition = SpringApplication(AdditionService::class.java)
+    val msAddition = SpringApplication(AdditionApplication::class.java)
     msAddition.addListeners(ApplicationPidFileWriter("addition-service.pid"))
     msAddition.run(*args)
 }

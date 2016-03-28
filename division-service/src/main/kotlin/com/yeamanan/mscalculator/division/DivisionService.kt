@@ -8,7 +8,6 @@ open class DivisionService {
 
     @HystrixCommand(fallbackMethod = "defaultResult")
     open fun division(x: Int, y: Int): Int {
-        throw IllegalArgumentException()
         return x / y
     }
 
