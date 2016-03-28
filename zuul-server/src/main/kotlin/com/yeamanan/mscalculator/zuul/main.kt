@@ -1,4 +1,4 @@
-package com.yeamanan.mscalculator.zuulserver
+package com.yeamanan.mscalculator.zuul
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.actuate.system.ApplicationPidFileWriter

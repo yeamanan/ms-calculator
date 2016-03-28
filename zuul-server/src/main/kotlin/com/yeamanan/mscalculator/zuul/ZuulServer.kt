@@ -1,4 +1,4 @@
-package com.yeamanan.mscalculator.zuulserver
+package com.yeamanan.mscalculator.zuul
 
 import org.slf4j.LoggerFactory
 import org.springframework.boot.CommandLineRunner
