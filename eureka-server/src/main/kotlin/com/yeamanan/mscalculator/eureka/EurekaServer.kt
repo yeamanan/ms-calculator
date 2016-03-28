@@ -1,4 +1,4 @@
-package com.yeamanan.mscalculator.eurekaserver
+package com.yeamanan.mscalculator.eureka
 
 import org.slf4j.LoggerFactory
 import org.springframework.boot.CommandLineRunner

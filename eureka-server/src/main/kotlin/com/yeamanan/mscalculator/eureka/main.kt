@@ -1,4 +1,4 @@
-package com.yeamanan.mscalculator.eurekaserver
+package com.yeamanan.mscalculator.eureka
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.actuate.system.ApplicationPidFileWriter
