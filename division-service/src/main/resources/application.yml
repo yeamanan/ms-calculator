@@ -2,7 +2,7 @@ info:
   component: Division Service
 
 server:
-  port: 9001
+  port: 9003
 
 spring:
   application:
