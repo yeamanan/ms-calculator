@@ -7,12 +7,12 @@ import org.springframework.stereotype.Service
 open class DivisionService {
 
     @HystrixCommand(fallbackMethod = "defaultResult")
-    open fun division(x: Int, y: Int): Int {
+    open fun division(x: Double, y: Double): Double {
         return x / y
     }
 
-    fun defaultResult(x: Int, y: Int): Int {
-        return 0
+    fun defaultResult(x: Double, y: Double): Double {
+        return 0.0
     }
 
 }

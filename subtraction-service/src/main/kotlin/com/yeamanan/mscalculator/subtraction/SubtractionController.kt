@@ -11,8 +11,8 @@ open class SubtractionController {
     @Autowired
     lateinit var service: SubtractionService
 
-    @RequestMapping("/{x:-?\\d+},{y:-?\\d+}")
-    fun root(@PathVariable("x") x: Int, @PathVariable("y") y: Int): Int {
+    @RequestMapping("/{x:-?[0-9]+\\.[0-9]+},{y:-?[0-9]+\\.[0-9]+}")
+    fun root(@PathVariable("x") x: Double, @PathVariable("y") y: Double): Double {
         return service.subtraction(x, y)
     }
 

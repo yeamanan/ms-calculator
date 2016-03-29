@@ -11,8 +11,8 @@ open class DivisionController {
     @Autowired
     lateinit var service: DivisionService
 
-    @RequestMapping("/{x:-?\\d+},{y:-?\\d+}")
-    fun root(@PathVariable("x") x: Int, @PathVariable("y") y: Int): Int {
+    @RequestMapping("/{x:-?[0-9]+\\.[0-9]+},{y:-?[0-9]+\\.[0-9]+}")
+    fun root(@PathVariable("x") x: Double, @PathVariable("y") y: Double): Double {
         return service.division(x, y)
     }
 

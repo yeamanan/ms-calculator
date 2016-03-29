@@ -7,12 +7,12 @@ import org.springframework.stereotype.Service
 open class AdditionService {
 
     @HystrixCommand(fallbackMethod = "defaultResult")
-    open fun addition(x: Int, y: Int): Int {
+    open fun addition(x: Double, y: Double): Double {
         return x + y
     }
 
-    fun defaultResult(x: Int, y: Int): Int {
-        return 0
+    fun defaultResult(x: Double, y: Double): Double {
+        return 0.0
     }
 
 }

@@ -12,6 +12,6 @@ turbine:
   aggregator:
     clusterConfig: DIVISION-SERVICE
 #    clusterConfig: ADDITION-SERVICE,CALCULATOR-SERVICE,DIVISION-SERVICE,MULTIPLICATION-SERVICE,SUBTRACTION-SERVICE
-  appConfig: division-service
-#  appConfig: addition-service,calculator-service,division-service,multiplication-service,subtraction-service
+#  appConfig: division-service
+  appConfig: addition-service,calculator-service,division-service,multiplication-service,subtraction-service
 #  clusterNameExpression: metadata.cluster
