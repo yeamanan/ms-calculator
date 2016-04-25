@@ -5,3 +5,4 @@ build/
 .gradletasknamecache
 .gradle/
 bin/
+.DS_Store

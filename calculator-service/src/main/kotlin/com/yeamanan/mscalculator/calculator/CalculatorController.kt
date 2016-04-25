@@ -11,8 +11,8 @@ open class CalculatorController {
     @Autowired
     lateinit var service: CalculatorService
 
-    @RequestMapping("/{operation}")
-    fun root(@PathVariable("operation") operation: String): Int {
+    @RequestMapping("/{operation:.*}")
+    fun root(@PathVariable("operation") operation: String): String {
         return service.calculate(operation)
     }
 
